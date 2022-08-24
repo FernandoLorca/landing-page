@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;700;800&display=swap");
+
+:root {
+  --fuentePrincipal: "Open Sans", sans-serif;
+  --fuenteTitulo: "Inconsolata", monospace;
+  --colorOscuro: #252527;
+  --colorClaro: #f3f3f3;
+  --colorPrincipal: #593b2e;
+  --colorSecundario: #332119;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 65.5%; /* 10px = 1rem */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-family: var(--fuentePrincipal);
+  color: var(--colorOscuro);
+  background-color: var(--colorClaro);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  background-color: var(--colorPrincipal);
+  border: 0;
+  padding: 0.8rem 2.2rem;
+  border-radius: 0.5rem;
+  color: var(--colorClaro);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 200ms ease, opacity 100ms ease;
+}
+
+.btn:hover {
+  background-color: var(--colorSecundario);
+}
+
+.btn:active {
+  opacity: 0.75;
+}
+
+/* ----------- Header ----------- */
+
+section header {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../imgs/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 55%;
+  font-family: var(--fuenteTitulo);
+  color: var(--colorClaro);
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section header .pantalla {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 22, 25, 0.5);
+}
+
+section header .header__txts {
+  position: absolute;
+}
+
+section header h1 {
+  font-weight: 800;
+  font-size: 5.5rem;
+  line-height: 5rem;
+}
+
+section header p {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+/* ----------- Productos ----------- */
+
+.productos {
+  padding-bottom: 5rem;
+}
+
+.productos main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productos main .productos__contenedor:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.productos main div h2 {
+  padding: 5rem 0 2rem 0;
+}
+
+.productos main div h2 {
+  text-align: center;
+}
+
+.productos__contenedor {
+  display: flex;
+  gap: 2rem;
+  margin: 0 2rem;
+  width: 75%;
+}
+
+.productos__contenedor-cards {
+  background-color: var(--colorClaro);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0rem 0rem 1rem 0.2rem rgba(89, 59, 46, 0.08);
+  transition: box-shadow 200ms ease;
+}
+
+.productos__contenedor-cards:hover {
+  box-shadow: 0rem 0rem 1rem 0.2rem rgba(89, 59, 46, 0.12);
+}
+
+.productos__contenedor-cards img {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.productos__contenedor-cards p {
+  margin-bottom: 1rem;
+}
+
+.productos__contenedor-cards button {
+  margin-top: 1rem;
+}
+
+/* ----------- Footer ----------- */
+
+section footer {
+  background-color: var(--colorPrincipal);
+  padding: 1rem 0;
+  color: var(--colorClaro);
+  display: flex;
+  justify-content: center;
+}
